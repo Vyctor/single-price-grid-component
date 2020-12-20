@@ -1,0 +1,192 @@
+:root {
+  --cyan: hsl(179, 62%, 43%);
+  --brightYellow: hsl(71, 73%, 54%);
+  --lightGray: hsl(204, 43%, 93%);
+  --grayishBlue: hsl(218, 22%, 67%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--grayishBlue);
+  font-family: "Karla", sans-serif;
+  font-size: 1.4rem;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  height: 80%;
+  background-color: var(--lightGray);
+}
+
+.top {
+  height: 40%;
+  background-color: #fff;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.top h1 {
+  color: var(--cyan);
+  font-size: 2rem;
+  padding-bottom: 1rem;
+}
+
+.top h2 {
+  color: var(--brightYellow);
+  font-size: 1.6rem;
+}
+
+.top p {
+  color: var(--grayishBlue);
+  font-size: 1.4rem;
+}
+
+.bottom {
+  display: flex;
+  flex-direction: column;
+  height: 60%;
+  color: var(--lightGray);
+}
+
+.first {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 50%;
+  background-color: var(--cyan);
+  padding: 2rem 3rem;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+}
+
+.value {
+  padding-right: 1.5rem;
+  font-size: 3rem;
+}
+
+.second {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 50%;
+  background-color: hsl(179, 62%, 49%);
+  padding: 2rem 3rem;
+}
+
+.second ul {
+  opacity: 0.7;
+}
+
+.signup-button {
+  background-color: var(--brightYellow);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  border: none;
+  height: 4rem;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 1.4rem;
+}
+
+.signup-button:hover {
+  opacity: 0.8;
+}
+
+@media (min-width: 1024px) {
+  .card {
+    width: 60%;
+    height: 60%;
+  }
+
+  .top {
+    height: 40%;
+  }
+
+  .bottom {
+    display: flex;
+    flex-direction: row;
+    max-height: 60%;
+  }
+
+  .first {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
+    width: 50%;
+    padding: 4rem;
+  }
+
+  .first h3 {
+    padding-bottom: 3rem;
+  }
+
+  .price {
+    padding-bottom: 3rem;
+  }
+
+  .second {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
+    width: 50%;
+    padding: 4rem;
+  }
+
+  .second h3 {
+    padding-bottom: 2rem;
+  }
+
+  .second ul li {
+    padding: 0.5rem;
+  }
+
+  .button-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-items: center;
+    align-items: center;
+  }
+
+  .signup-button {
+    margin-top: 4rem;
+    height: 5rem;
+    width: 25rem;
+    font-size: 2rem;
+  }
+}
